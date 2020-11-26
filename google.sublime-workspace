@@ -1,0 +1,506 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"searc",
+				"searchValue"
+			],
+			[
+				"object",
+				"objectField"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "google_studio_uploading.py",
+			"settings":
+			{
+				"buffer_size": 8939,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "google_studio_create_creatives.py",
+			"settings":
+			{
+				"buffer_size": 885,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sql ",
+				"Set Syntax: SQL"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"format java",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"format javasc",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"instll pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"instlal p",
+				"Package Control: Install Package"
+			],
+			[
+				"ue",
+				"UI: Select Theme"
+			],
+			[
+				"format css",
+				"CodeFormatter: Format as CSS Syntax"
+			],
+			[
+				"INSTALL PAC",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/szotyi/Dokumentumok/google-studio-automatizations"
+	],
+	"file_history":
+	[
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/.gitignore",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/Triumph/Triumph_3Images_Prospecting/300x250/index.html",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/campaign_manager_resolve_creatives.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/campaign_manager.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/domfunctions.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/download.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google-studio.sublime-project",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google-studio.sublime-workspace",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google_studio.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google-studio-automatization.sublime-workspace",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google_studio_create_creatives.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/google_studio_uploading.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/package-lock.json",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/resolve.py",
+		"/home/szotyi/Dokumentumok/google-studio-automatizations/upload.py",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_300x250/index.html",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_300x250/300x250.css",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_320x50/320x50.css",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_336x280/336x280.css",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_728x90/728x90.css",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_160x600/160x600.css",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_320x50/index.html",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_336x280/index.html",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_728x90/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Awareness/300x250/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Awareness/300x250/300x250.css",
+		"/home/szotyi/Dokumentumok/google-studio-dynamic-template/dynamic.content.js",
+		"/home/szotyi/Letöltések/webshot-master/webshot/webshot.py",
+		"/home/szotyi/Dokumentumok/google-studio-dynamic-template/package.json",
+		"/home/szotyi/Dokumentumok/google-studio-dynamic-template/dynamic.content.es5.js/dynamic.content.js",
+		"/home/szotyi/Dokumentumok/Axa/axa_prospecting_160x600/index.html",
+		"/home/szotyi/Asztal/weather.json",
+		"/home/szotyi/.cache/.fr-kBGVtb/stylesheet.css",
+		"/home/szotyi/Dokumentumok/Axa/Fonts/stylesheet.css",
+		"/home/szotyi/Dokumentumok/Tungsram/Product/300x250/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Awareness/640x360/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Awareness/970x250/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Product/640x360/index.html",
+		"/home/szotyi/Dokumentumok/Tungsram/Product/970x250/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_300x250/index.html",
+		"/home/szotyi/Letöltések/danone_alltribes_alllanguages_300x50/300x50.css",
+		"/home/szotyi/Letöltések/danone_alltribes_alllanguages_300x50/index.html",
+		"/home/szotyi/.cache/.fr-cpgLcV/stylesheet.css",
+		"/home/szotyi/.cache/.fr-pq51eR/stylesheet.css",
+		"/home/szotyi/.cache/.fr-wBHjdR/stylesheet.css",
+		"/home/szotyi/.cache/.fr-x9ESpS/stylesheet.css",
+		"/home/szotyi/Letöltések/danone_alltribes_alllanguages_300x50/stylesheet.css",
+		"/home/szotyi/.cache/.fr-71pxER/demo.html",
+		"/home/szotyi/.cache/.fr-K6ZH5S/stylesheet.css",
+		"/home/szotyi/.cache/.fr-XoAUqX/300x250/index.html",
+		"/home/szotyi/Letöltések/7337_Reporting_Label_filtering_last_7_days_20201103_053326_3102763136.csv",
+		"/home/szotyi/Dokumentumok/porn/mediasales.ovpn",
+		"/home/szotyi/Dokumentumok/Tungsram/Product/300x250/300x250.css",
+		"/home/szotyi/Dokumentumok/Tungsram/300x250/index.html",
+		"/home/szotyi/Dokumentumok/porn/ta.key",
+		"/home/szotyi/.cache/.fr-66rxgE/index.html",
+		"/home/szotyi/.cert/nm-openvpn/mediasales-cert.pem",
+		"/home/szotyi/Dokumentumok/axa/300x250/index.html",
+		"/home/szotyi/Dokumentumok/axa/336x280/index.html",
+		"/home/szotyi/Dokumentumok/axa/320x50/index.html",
+		"/home/szotyi/Dokumentumok/axa/728x90/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_970x250/index.html",
+		"/home/szotyi/Dokumentumok/porn/wavemaker.pem",
+		"/home/szotyi/Dokumentumok/porn/wavemaker2.pem",
+		"/home/szotyi/.cert/nm-openvpn/mediasales-key.pem",
+		"/home/szotyi/Dokumentumok/axa/160x600/index.html",
+		"/home/szotyi/.cert/nm-openvpn/mediasales-ca.pem",
+		"/home/szotyi/Dokumentumok/axa/160x600.css",
+		"/home/szotyi/Dokumentumok/axa/300x250.css",
+		"/home/szotyi/Dokumentumok/axa/320x50.css",
+		"/home/szotyi/Dokumentumok/axa/336x280.css",
+		"/home/szotyi/Dokumentumok/axa/728x90.css",
+		"/home/szotyi/.cache/.fr-9sryRA/336x280.css",
+		"/home/szotyi/Dokumentumok/axa/300x250/300x250.css",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_728x90/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_320x50/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_300x600/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_300x50/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_970x250/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_728x90/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_320x50/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_300x600/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_300x250/index.html",
+		"/home/szotyi/Dokumentumok/Danone/danone_alltribes_alllanguages_remarketing_300x50/index.html",
+		"/home/szotyi/.cache/.fr-IwCbAt/index.html",
+		"/home/szotyi/Asztal/axa/index.html",
+		"/home/szotyi/.cache/.fr-QXShev/index.html",
+		"/home/szotyi/Letöltések/300x250/index.html",
+		"/var/www/creative-editor/pages/index.tsx",
+		"/home/szotyi/.cache/.fr-zSHdCd/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/970x250/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/320x50/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/300x600/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/728x90/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/300x250/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.4.10,share=kreativ_tar/dco_kreativ_tar/Danone/Danone_AllTribes_AllLanguages_Prospecting/300x50/index.html",
+		"/home/szotyi/Dokumentumok/data-search/datasearch.html",
+		"/home/szotyi/Dokumentumok/data-search/datasearch.js",
+		"/home/szotyi/Dokumentumok/data-search/package.json",
+		"/var/www/craft.js-develop/CODEOWNERS",
+		"/var/www/craft.js-develop/config.js",
+		"/usr/share/applications/sublime_text.desktop",
+		"/home/szotyi/Asztal/decathlon/dynamicContent.js",
+		"/home/szotyi/Asztal/decathlon/script.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 312.0,
+		"where_history":
+		[
+			"*.html",
+			"*.css",
+			"",
+			"index.html",
+			"*.css",
+			".css",
+			"index.html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"creatives_created_success",
+			"success_creatives",
+			"creative_index",
+			"\"^.*_([0-9]{0,4})x([0-9]{0,4})$\"",
+			"'",
+			"class=\"background-image-1",
+			"div {",
+			"div {\n  width: 100%;\n  height: 100%;",
+			"div div",
+			"main",
+			"<body>",
+			" = 'https://api.openweathermap.org/data/2.5/weather?q=budapest&units=metric&APPID=&show=main.temp'",
+			"@font-face {\n  font-family: \"DB Helvethaica X Bold\";\n  src: url(\"DB_Helvethaica_X_Bold.woff\") format(\"woff\");\n}",
+			"@font-face {\n  font-family: \"DB Helvethaica X\";\n  src: url(\"DB_Helvethaica_X.woff2\") format(\"woff2\");\n}",
+			"var(--color-main)",
+			"[0]);",
+			"/879366/Enabler_01_245.js",
+			"fadeIn",
+			"<body>",
+			" = 'https://api.openweathermap.org/data/2.5/weather?q=budapest&units=metric&APPID=&show=main.temp'",
+			"[0]);",
+			"/879366/Enabler_01_245.js",
+			"Gotham Condensed Bold",
+			"subset-",
+			"Bold",
+			"Light",
+			"25B680",
+			"--color-main",
+			"subset-",
+			"{\n",
+			"a",
+			"intro",
+			"<script src=\"/879366/Enabler_01_244.js\"></script>",
+			"<script src=\"/879366/Enabler_01_245.js\"></script>",
+			"click-text",
+			"BackgroundColor",
+			"TextColor",
+			"textColor",
+			"backgroundImage",
+			"texts",
+			"background",
+			"Danone_Google_Studio_BellyBattlers_Prospecting_EN",
+			"a",
+			"title = ''",
+			"value",
+			"field",
+			"sortBy",
+			" = function ",
+			"typeof afield === 'object') && ",
+			"Array.prototype",
+			"Array.prototype.",
+			"String.prototype."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"class=\"main background-image-1",
+			"div.main {",
+			"div.main {\n  width: 100%;\n  height: 100%;",
+			"div",
+			"<body style=\"opacity: 1\">",
+			"",
+			"@font-face {\n    font-family: 'DB Helvethaica X Bold';\n    src: url('DBHelvethaicaX-Bd.eot');\n    src: url('DBHelvethaicaX-Bd.eot?#iefix') format('embedded-opentype'),\n        url('DBHelvethaicaX-Bd.woff2') format('woff2'),\n        url('DBHelvethaicaX-Bd.woff') format('woff'),\n        url('DBHelvethaicaX-Bd.ttf') format('truetype'),\n        url('DBHelvethaicaX-Bd.svg#DBHelvethaicaX-Bd') format('svg');\n    font-weight: bold;\n    font-style: normal;\n    font-display: swap;\n}",
+			"@font-face {\n    font-family: 'DB Helvethaica X';\n    src: url('DBHelvethaicaX-55Regular.eot');\n    src: url('DBHelvethaicaX-55Regular.eot?#iefix') format('embedded-opentype'),\n        url('DBHelvethaicaX-55Regular.woff2') format('woff2'),\n        url('DBHelvethaicaX-55Regular.woff') format('woff'),\n        url('DBHelvethaicaX-55Regular.ttf') format('truetype'),\n        url('DBHelvethaicaX-55Regular.svg#DBHelvethaicaX-55Regular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n}",
+			"#00008f",
+			"[0]);\n\n                    document.body.style.transition = 'all 0.3s';\n                    document.body.style.opacity = 1;",
+			"https://s0.2mdn.net/ads/studio/Enabler.js",
+			"<body style=\"opacity: 0\">",
+			"",
+			"[0]);\n\n                    document.body.style.transition = 'all 0.3s';\n                    document.body.style.opacity = 1;",
+			"https://s0.2mdn.net/ads/studio/Enabler.js",
+			"<script src=\"https://s0.2mdn.net/ads/studio/Enabler.js\"></script>",
+			"click-text cta-text"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "google_studio_uploading.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								513,
+								513
+							]
+						],
+						"settings":
+						{
+							"rainbow_checked": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "google_studio_create_creatives.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								850,
+								850
+							]
+						],
+						"settings":
+						{
+							"rainbow_checked": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "google.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

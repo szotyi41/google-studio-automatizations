@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import os.path
 import time
@@ -74,9 +75,10 @@ class GoogleStudioUploading(GoogleStudio):
 
 		return True
 
-	def create_creatives_from_folder(self, driver, creatives_folder, account_name = 'Addressable Content', advertiser_name = 'Triumph_HK_Wavemaker', campaign_name = 'Triumph_TW'):
+	def create_creatives_from_folder(self, driver, creatives_folder = 'Triumph', account_name = 'Addressable Content', advertiser_name = 'Triumph_HK_Wavemaker', campaign_name = 'Triumph_TW'):
 
-		creative_index = 0
+		self.uploading_success_count = 0
+		creatives_created_success = []
 		already_exists_creatives = []
 		all_creative_names = os.listdir(creatives_folder)
 
@@ -87,114 +89,135 @@ class GoogleStudioUploading(GoogleStudio):
 			if folder_name == '.DS_Store':
 				continue
 
-			print('Creative begin to create in more sizes: ', folder_name)
+			# If folder name ends with _300x250 like format, upload creative from that folder 
+			regex_size = "^.*_([0-9]{0,4}x[0-9]{0,4})$"
+			if re.find(regex_size, folder_name) == True:
 
-			for creative_size in os.listdir(creatives_folder + '/' + folder_name):
+				# Upload creatives from folder: Creatives/CreativeName_Size
+				folder_name_size = re.match(regex_size, folder_name)
+				creative_size = folder_name_size.groups()[0]
+				creative_name = folder_name
+				creative_folder = folder_name
 
-				# Creative name
-				creative_name = folder_name + '_' + creative_size
+				print('Create creative with name:', creative_name, str(len(creatives_created_success) + 1), ' Success:', str(self.uploading_success_count))
+				self.create_creative(self, driver, creative_folder, creative_size)
+				print('Creative successfully uploaded:', str(len(creatives_created_success)), '/', str(len(all_creative_names)))
 
-				print('Find for creative:', creative_name, str(creative_index + 1), ' success:', str(self.uploading_success_count))
+				creatives_created_success.append(creative_name)
 
-				# Creative folder where you upload from
-				creative_folder = creatives_folder + '/' + folder_name + '/' + creative_size
+			else:
 
-				# If creative directory exists
-				if os.path.isdir(creative_folder) != True:
-					print('Creative folder not exists for uploading: ', creative_folder)
-					continue
+				# Upload creatives from folder: Creatives/CreativeName/Size
+				print('Creative begin to create in more sizes: ', folder_name)
 
-				# Uploading started in size
-				size = creative_size.split('x')
-				creative_width = size[0]
-				creative_height = size[1] 
+				for creative_size in os.listdir(creatives_folder + '/' + folder_name):
 
-				print('Creative begin to create in size: ', creative_name, '. Go to create creative page')
+					# .DS_Store is not a folder
+					if creative_size == '.DS_Store':
+						continue
 
-				driver.get('https://www.google.com/doubleclick/studio/#creative/new:')
+					creative_name = folder_name + '_' + creative_size
+					creative_folder = creatives_folder + '/' + folder_name + '/' + creative_size
 
+					print('Create creative with name:', creative_name, str(len(creatives_created_success) + 1), ' Success:', str(self.uploading_success_count))
+					self.create_creative(self, driver, creative_folder, creative_size)
+					print('Creative successfully uploaded:', str(len(creatives_created_success)), '/', str(len(all_creative_names)))
 
-				# Account input
-				account_input = driver.find_element_by_css_selector('#mat-input-6')
-				account_input.send_keys(account_name)
+					creatives_created_success.append(creative_name)
 
-				time.sleep(3)
+		print(self.uploading_success_count, ' creative(s) successfully uploaded')
 
-				# Advertiser input
-				advertiser_input = driver.find_element_by_css_selector('#mat-input-4')
-				advertiser_input.send_keys(advertiser_name)
+	def create_creative(self, driver, creative_folder = 'Triumph/Triumph_Prospecting/300x250', creative_size = '300x250'):
 
-				time.sleep(3)
+		# If creative directory exists
+		if os.path.isdir(creative_folder) != True:
+			print('Creative folder not exists for uploading: ', creative_folder)
+			continue
 
-				# Campaign input
-				campaign_input = driver.find_element_by_css_selector('#mat-input-5')
-				campaign_input.send_keys(campaign_name)
+		# Uploading started in size 300x250
+		size = creative_size.split('x')
+		creative_width = size[0]
+		creative_height = size[1] 
 
-				time.sleep(3)
+		print('Creative begin to create in size: ', creative_name, '. Go to create creative page')
 
-				# Creative Name input
-				creative_input = driver.find_element_by_css_selector('#mat-input-3')
-				creative_input.send_keys(creative_name)
+		driver.get('https://www.google.com/doubleclick/studio/#creative/new:')
 
-				time.sleep(1)
+		# Account input
+		account_input = driver.find_element_by_css_selector('#mat-input-6')
+		account_input.send_keys(account_name)
 
-				# Format select
-				format_select = driver.find_element_by_css_selector('#mat-select-2')
-				ActionChains(driver).click(format_select).perform()
+		time.sleep(3)
 
-				time.sleep(1)
+		# Advertiser input
+		advertiser_input = driver.find_element_by_css_selector('#mat-input-4')
+		advertiser_input.send_keys(advertiser_name)
 
-				format_select_options = driver.find_elements_by_css_selector('span.mat-option-text')
-				banner_select_option = get_element_by_inner_text(format_select_options, 'Banner')
-				ActionChains(driver).click(banner_select_option).perform()
+		time.sleep(3)
 
-				time.sleep(1)
-				
-				# Find select options
-				format_select = driver.find_element_by_css_selector('#mat-select-4')
-				ActionChains(driver).click(format_select).perform()
+		# Campaign input
+		campaign_input = driver.find_element_by_css_selector('#mat-input-5')
+		campaign_input.send_keys(campaign_name)
 
-				time.sleep(1)
+		time.sleep(3)
 
-				format_select_options = driver.find_elements_by_css_selector('span.mat-option-text')
-				banner_select_option = get_element_by_inner_text(format_select_options, 'User defined')
-				ActionChains(driver).click(banner_select_option).perform()
+		# Creative Name input
+		creative_input = driver.find_element_by_css_selector('#mat-input-3')
+		creative_input.send_keys(creative_name)
 
-				time.sleep(1)
+		time.sleep(1)
 
-				# Set width and height
-				width_input = driver.find_element_by_css_selector('#mat-input-7')
-				width_input.send_keys(creative_width)
-				height_input = driver.find_element_by_css_selector('#mat-input-8')
-				height_input.send_keys(creative_height)
+		# Format select
+		format_select = driver.find_element_by_css_selector('#mat-select-2')
+		ActionChains(driver).click(format_select).perform()
 
-				time.sleep(1)
+		time.sleep(1)
 
-				# Find submit button
-				submit_button = driver.find_element_by_css_selector('button[type=submit]')
-				ActionChains(driver).click(submit_button).perform()
+		format_select_options = driver.find_elements_by_css_selector('span.mat-option-text')
+		banner_select_option = get_element_by_inner_text(format_select_options, 'Banner')
+		ActionChains(driver).click(banner_select_option).perform()
 
-				time.sleep(5)
+		time.sleep(1)
+		
+		# Find select options
+		format_select = driver.find_element_by_css_selector('#mat-select-4')
+		ActionChains(driver).click(format_select).perform()
 
-				print('Creative submitted for uploading.')
+		time.sleep(1)
 
-				status_bar = driver.find_elements_by_css_selector('.status')
-				if (status_bar and get_element_by_inner_text(status_bar, '^.*creative with this name already exists.*$', True)):
-					print('Creative already exists. Continue with the next creative')
-					already_exists_creatives.append(creative_name)
-					continue
+		format_select_options = driver.find_elements_by_css_selector('span.mat-option-text')
+		banner_select_option = get_element_by_inner_text(format_select_options, 'User defined')
+		ActionChains(driver).click(banner_select_option).perform()
 
-				# Upload creative
-				self.upload_creative(driver, creatives_folder + '/' + creative_name)
+		time.sleep(1)
 
-				print('Creative successfully uploaded:', creative_index, '/', str(len(all_creative_names)))
+		# Set width and height
+		width_input = driver.find_element_by_css_selector('#mat-input-7')
+		width_input.send_keys(creative_width)
+		height_input = driver.find_element_by_css_selector('#mat-input-8')
+		height_input.send_keys(creative_height)
 
-				creative_index += 1
+		time.sleep(1)
 
-		print(self.uploading_success_count, ' creative(s) successfully uploaded')				
+		# Find submit button
+		submit_button = driver.find_element_by_css_selector('button[type=submit]')
+		ActionChains(driver).click(submit_button).perform()
 
+		time.sleep(5)
 
-	def upload_creative(self, driver, creative_folder):
+		print('Creative submitted for uploading.')
+
+		# Check creative is not exists yet
+		status_bar = driver.find_elements_by_css_selector('.status')
+		if (status_bar and get_element_by_inner_text(status_bar, '^.*creative with this name already exists.*$', True)):
+			print('Creative already exists. Continue with the next creative')
+			already_exists_creatives.append(creative_name)
+			continue
+
+		# Upload creative
+		return self.upload_creative(driver, creatives_folder + '/' + creative_name)
+
+	def upload_creative(self, driver, creative_folder = 'Triumph/Triumph_Prospecting/300x250'):
 
 		print('Upload creative from folder: ', creative_folder)
 
