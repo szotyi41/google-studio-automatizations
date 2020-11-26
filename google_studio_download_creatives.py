@@ -26,7 +26,7 @@ uploadingSuccessCount = 0
 downloadingSuccessCount = 0
 
 # COMMAND in OSX, CONTROL in linux or windows
-keyWhichNeededToPressWhenClickToUrlInNewTab = Keys.COMMAND
+key_new_tab = Keys.COMMAND
 
 # Get first creative
 def getAllCreativesInPage(driver):

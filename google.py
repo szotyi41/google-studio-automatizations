@@ -2,6 +2,7 @@ import os
 import sys
 import os.path
 import time
+import platform
 
 from selenium import webdriver
 from selenium.webdriver import ActionChains
@@ -9,6 +10,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+
+# COMMAND in OSX, CONTROL in linux or windows
+if platform.system() == 'Darwin':
+	key_new_tab = Keys.COMMAND
+else:
+	key_new_tab = Keys.CONTROL
 
 class Google:
 
