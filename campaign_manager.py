@@ -173,6 +173,7 @@ class CampaignManager:
 				ActionChains(self.driver).click(save_button).perform()
 
 				# Go back to all creatives tab
+				self.driver.close()
 				self.driver.switch_to.window(creatives_tab)
 
 				print('Creative successfully associated with dynamic targeting key:', dynamic_targeting_key, 'Process:', str(dtk_index + 1), '/', str(len(dynamic_targeting_keys)))
@@ -181,7 +182,7 @@ class CampaignManager:
 
 			creative_index += 1 
 
-			return True
+		return True
 
 
 
@@ -204,6 +205,8 @@ class CampaignManager:
 		new_creative_name = self.get_creative_name(creative_name, dynamic_targeting_key)
 
 		print('Started to copy creative', creative_name, 'to name', new_creative_name)
+
+		time.sleep(5)
 
 		# Click to copy button
 		copy_button = get_element_until_found(self.driver, '.button-copy')
@@ -230,7 +233,8 @@ class CampaignManager:
 		# Click to collapse Dynamic targeting keys
 		collapses = self.driver.find_elements_by_css_selector('.dfa-collapsiblepanel')
 		dynamic_targeting_key_collapse = get_element_by_inner_text(collapses, '^.*Dynamic targeting keys.*$', True)
-		ActionChains(self.driver).click(dynamic_targeting_key_collapse).perform()
+		dynamic_targeting_key_link = dynamic_targeting_key_collapse.find_element_by_css_selector('a')
+		ActionChains(self.driver).click(dynamic_targeting_key_link).perform()
 		print('Dynamic targeting key section collapsed')
 
 		time.sleep(1)
@@ -264,9 +268,9 @@ class CampaignManager:
 		else:
 
 			# Find button for add the dynamic targeting key
-			dynamic_targeting_key_options = self.driver.find_elements_by_css_selector('.omnilist-body a')
-			dynamic_targeting_key_option = get_element_by_inner_text(dynamic_targeting_key_options, dynamic_targeting_key)
-			dynamic_targeting_key_option.click()
+			dynamic_targeting_key_option = self.driver.find_element_by_css_selector('a')
+			dynamic_targeting_key_option = get_element_by_inner_text(dynamic_targeting_key_options, '^.*' + dynamic_targeting_key + '.*$', True, re.IGNORECASE)
+			ActionChains(self.driver).click(dynamic_targeting_key_option).perform()
 			print('Dynamic targeting selected successfully', dynamic_targeting_key)
 
 		return True
