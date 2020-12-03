@@ -230,6 +230,7 @@ class CampaignManager:
 		# Click to collapse Dynamic targeting keys
 		collapses = self.driver.find_elements_by_css_selector('.dfa-collapsiblepanel')
 		dynamic_targeting_key_collapse = get_element_by_inner_text(collapses, '^.*Dynamic targeting keys.*$', True)
+		
 		ActionChains(self.driver).click(dynamic_targeting_key_collapse).perform()
 		print('Dynamic targeting key section collapsed')
 
