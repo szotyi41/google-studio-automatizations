@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-def get_element_by_inner_text(elements, inner_text, regex = False):
+def get_element_by_inner_text(elements, inner_text, regex = False, regex_options = False):
 
 	found_element = False
 	current_element_text = ''
@@ -19,7 +19,7 @@ def get_element_by_inner_text(elements, inner_text, regex = False):
 				current_element_text = element.get_attribute('innerText')
 
 				# By regex
-				if (regex == True and re.search(inner_text, current_element_text)):
+				if (regex == True and re.search(inner_text, current_element_text, regex_options)):
 					found_element = element
 					break
 
@@ -74,8 +74,10 @@ def get_element_until_found(driver, css_selector):
 	WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, css_selector)))
 	while (True):
 		try:
+			print('Find element by css selector', css_selector)
 			element = driver.find_element_by_css_selector(css_selector)
 			element.get_attribute('innerText')
+			print('Element found')
 			return element
 		except:
 			print('Try again to find element:', css_selector)

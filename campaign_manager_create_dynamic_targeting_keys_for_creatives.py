@@ -10,8 +10,8 @@ driver = webdriver.Chrome()
 google = Google(driver)
 google.login('me19@mediasales.hu', 'aMUNATION1')
 
-creatives_url = 'https://campaignmanager.google.com/trafficking/#/accounts/810794/advertisers/9142492/creatives?q=1Image&status=1&archived=false'
-dynamic_targeting_keys = ['Message_8', 'Message_11']
+creatives_url = 'https://campaignmanager.google.com/trafficking/#/accounts/810794/advertisers/9142492/creatives?q=3Image&status=1&archived=false'
+dynamic_targeting_keys = ['Message_2', 'Message_3', 'Message_5', 'Message_6']
 
 # Resolve creatives
 campaign_manager = CampaignManager(driver)
